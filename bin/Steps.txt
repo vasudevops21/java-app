@@ -19,7 +19,7 @@ sudo vi /opt/apache-tomcat-9.0.65/webapps/manager/META-INF/context.xml
 comment:
   <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
   allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
-  
+
 sudo vi /opt/apache-tomcat-9.0.65/webapps/host-manager/META-INF/context.xml
 comment:
   <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
@@ -32,7 +32,7 @@ sudo startTomcat
 
 
 
-sudo  cp /home/ubuntu/myagent/_work/5/s/target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/
+sudo  cp /home/ubuntu/myagent/_work/5/s/target/home.war /opt/apache-tomcat-9.0.65/webapps/
 
 ##################-----PIPELINE------###################
 
@@ -59,7 +59,7 @@ pipeline {
                sh "mvn clean compile"
             }
         }
-        
+
 		stage('OWASP Dependency Check') {
             steps {
                dependencyCheck additionalArguments: '', odcInstallation: 'DP-check'
@@ -94,7 +94,7 @@ pipeline {
             steps {
                script{
                    withDockerRegistry(credentialsId: '9ea0c4b0-721f-4219-be62-48a976dbeec0') {
-                    sh "docker build -t  petclinic . "
+                    sh "docker build -t  home . "
                  }
                }
             }
@@ -104,15 +104,15 @@ pipeline {
             steps {
                script{
                    withDockerRegistry(credentialsId: '9ea0c4b0-721f-4219-be62-48a976dbeec0') {
-                    sh "docker tag devopscicd adijaiswal/petclinic:latest"
-                    sh "docker push  adijaiswal/petclinic:latest "
+                    sh "docker tag devopscicd adijaiswal/home:latest"
+                    sh "docker push  adijaiswal/home:latest "
                  }
                }
             }
         }
 		stage('Deploy to Tomcat') {
             steps {
-               sh "  cp /home/ubuntu/myagent/_work/5/s/target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/ "
+               sh "  cp /home/ubuntu/myagent/_work/5/s/target/home.war /opt/apache-tomcat-9.0.65/webapps/ "
             }
         }
 
@@ -142,11 +142,11 @@ echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  
+
   sudo apt-get update
-  
+
   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-  
+
 service docker restart
 sudo usermod -aG docker $USER
 newgrp docker
@@ -163,7 +163,7 @@ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
-sudo apt-get update -y 
+sudo apt-get update -y
 sudo apt-get install jenkins -y
 
 sudo systemctl enable jenkins

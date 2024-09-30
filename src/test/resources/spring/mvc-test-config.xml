@@ -6,7 +6,7 @@
 
 
     <bean class="org.mockito.Mockito" factory-method="mock">
-        <constructor-arg value="org.springframework.samples.petclinic.service.ClinicService"/>
+        <constructor-arg value="org.springframework.samples.home.service.ClinicService"/>
     </bean>
 
 </beans>

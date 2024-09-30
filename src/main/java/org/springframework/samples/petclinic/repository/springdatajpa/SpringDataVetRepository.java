@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.repository.springdatajpa;
+package org.springframework.samples.home.repository.springdatajpa;
 
 import org.springframework.data.repository.Repository;
-import org.springframework.samples.petclinic.model.Vet;
-import org.springframework.samples.petclinic.repository.VetRepository;
+import org.springframework.samples.home.model.Vet;
+import org.springframework.samples.home.repository.VetRepository;
 
 /**
  * Spring Data JPA specialization of the {@link VetRepository} interface

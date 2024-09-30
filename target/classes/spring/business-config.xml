@@ -16,9 +16,9 @@
     <import resource="datasource-config.xml"/>
 
     <context:component-scan
-        base-package="org.springframework.samples.petclinic.service"/>
+        base-package="org.springframework.samples.home.service"/>
 
-    <!-- Configurer that replaces MavenProject: org.springframework.samples:spring-framework-petclinic:5.3.13 @ C:\\Users\\vamsh\\Downloads\\Petclinic-main\\pom.xml placeholders with values from a properties file -->
+    <!-- Configurer that replaces MavenProject: org.springframework.samples:spring-framework-home:5.3.13 @ C:\\Users\\vamsh\\Downloads\\home-main\\pom.xml placeholders with values from a properties file -->
     <!-- (in this case, JDBC-related settings for the JPA EntityManager definition below) -->
     <context:property-placeholder location="classpath:spring/data-access.properties" system-properties-mode="OVERRIDE"/>
 
@@ -46,8 +46,8 @@
                  -->
             </property>
             <!-- gDickens: BOTH Persistence Unit and Packages to Scan are NOT compatible, persistenceUnit will win -->
-            <property name="persistenceUnitName" value="petclinic"/>
-            <property name="packagesToScan" value="org.springframework.samples.petclinic"/>
+            <property name="persistenceUnitName" value="home"/>
+            <property name="packagesToScan" value="org.springframework.samples.home"/>
         </bean>
 
         <!-- Transaction manager for a single JPA EntityManagerFactory (alternative to JTA) -->
@@ -77,7 +77,7 @@
             <constructor-arg ref="dataSource"/>
         </bean>
 
-        <context:component-scan base-package="org.springframework.samples.petclinic.repository.jdbc"/>
+        <context:component-scan base-package="org.springframework.samples.home.repository.jdbc"/>
     </beans>
 
     <beans profile="jpa">
@@ -87,10 +87,10 @@
             EntityManager will be auto-injected due to @PersistenceContext.
             PersistenceExceptions will be auto-translated due to @Repository.
         -->
-        <context:component-scan base-package="org.springframework.samples.petclinic.repository.jpa"/>
+        <context:component-scan base-package="org.springframework.samples.home.repository.jpa"/>
     </beans>
 
     <beans profile="spring-data-jpa">
-        <jpa:repositories base-package="org.springframework.samples.petclinic.repository.springdatajpa"/>
+        <jpa:repositories base-package="org.springframework.samples.home.repository.springdatajpa"/>
     </beans>
 </beans>

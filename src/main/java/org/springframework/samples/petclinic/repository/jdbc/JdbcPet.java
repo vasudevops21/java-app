@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.repository.jdbc;
+package org.springframework.samples.home.repository.jdbc;
 
-import org.springframework.samples.petclinic.model.Pet;
+import org.springframework.samples.home.model.Pet;
 
 /**
  * Subclass of Pet that carries temporary id properties which are only relevant for a JDBC implementation of the

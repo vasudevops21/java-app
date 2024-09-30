@@ -1,5 +1,5 @@
 ================================================================================
-===        Spring PetClinic sample application - MySQL Configuration         ===
+===        Spring home sample application - MySQL Configuration         ===
 ================================================================================
 
 @author Sam Brannen
@@ -13,7 +13,7 @@
    README.md for the Docker command line.
 
 2) Dependency for Connector/J, the MySQL JDBC driver (e.g., Connector/J 8.0.x) is
-   included in Petclinic pom.xml file. See the MySQL maven profile.
+   included in home pom.xml file. See the MySQL maven profile.
    Alternatively, download Connector/J JDBC driver from here:
    https://dev.mysql.com/downloads/connector/j/
    and copy the MySQL JDBC driver JAR file (e.g., mysql-connector-java-0.0.19-bin.jar).

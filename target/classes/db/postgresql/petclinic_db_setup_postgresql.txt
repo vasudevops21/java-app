@@ -1,5 +1,5 @@
 ================================================================================
-===        Spring PetClinic sample application - PostgreSQL Configuration    ===
+===        Spring home sample application - PostgreSQL Configuration    ===
 ================================================================================
 
 @author Sam Brannen
@@ -10,15 +10,15 @@
 1) Download and install the PostgreSQL database,
    which can be found here: https://www.postgresql.org/download/
 
-2) Dependency for postgresql-driver included in Petclinic pom.xml file.
+2) Dependency for postgresql-driver included in home pom.xml file.
    See the PostgreSQL maven profile.
    Alternatively, download PostgreSQL JDBC driver from here: https://jdbc.postgresql.org/download.html
    and copy the PostgreSQL JDBC driver JAR file (e.g., postgresql-9.4.1211.jre7.jar) into
    the db/postgesql directory.
 
-3) Open psql and create the PetClinic database:
- 
-	CREATE DATABASE petclinic
+3) Open psql and create the home database:
+
+	CREATE DATABASE home
   	WITH OWNER = postgres
        ENCODING = 'UTF8'
        TABLESPACE = pg_default

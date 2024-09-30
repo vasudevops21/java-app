@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic;
+package org.springframework.samples.home;
 
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
@@ -36,7 +36,7 @@ import javax.servlet.ServletContext;
  *
  * @author Antoine Rey
  */
-public class PetclinicInitializer extends AbstractDispatcherServletInitializer {
+public class homeInitializer extends AbstractDispatcherServletInitializer {
 
     /**
      * Spring profile used to choose the persistence layer implementation.

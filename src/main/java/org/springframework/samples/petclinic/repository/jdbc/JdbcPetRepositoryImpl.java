@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.repository.jdbc;
+package org.springframework.samples.home.repository.jdbc;
 
 import java.util.HashMap;
 import java.util.List;
@@ -28,12 +28,12 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.orm.ObjectRetrievalFailureException;
-import org.springframework.samples.petclinic.model.Owner;
-import org.springframework.samples.petclinic.model.Pet;
-import org.springframework.samples.petclinic.model.PetType;
-import org.springframework.samples.petclinic.repository.OwnerRepository;
-import org.springframework.samples.petclinic.repository.PetRepository;
-import org.springframework.samples.petclinic.util.EntityUtils;
+import org.springframework.samples.home.model.Owner;
+import org.springframework.samples.home.model.Pet;
+import org.springframework.samples.home.model.PetType;
+import org.springframework.samples.home.repository.OwnerRepository;
+import org.springframework.samples.home.repository.PetRepository;
+import org.springframework.samples.home.util.EntityUtils;
 import org.springframework.stereotype.Repository;
 
 /**

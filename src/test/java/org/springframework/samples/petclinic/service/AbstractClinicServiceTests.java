@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.service;
+package org.springframework.samples.home.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -22,12 +22,12 @@ import java.util.Collection;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.samples.petclinic.model.Owner;
-import org.springframework.samples.petclinic.model.Pet;
-import org.springframework.samples.petclinic.model.PetType;
-import org.springframework.samples.petclinic.model.Vet;
-import org.springframework.samples.petclinic.model.Visit;
-import org.springframework.samples.petclinic.util.EntityUtils;
+import org.springframework.samples.home.model.Owner;
+import org.springframework.samples.home.model.Pet;
+import org.springframework.samples.home.model.PetType;
+import org.springframework.samples.home.model.Vet;
+import org.springframework.samples.home.model.Visit;
+import org.springframework.samples.home.util.EntityUtils;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 

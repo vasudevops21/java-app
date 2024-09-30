@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Application context definition for PetClinic Datasource.
+    Application context definition for home Datasource.
 -->
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -18,15 +18,15 @@
 
     <!-- ========================= DATASOURCE DEFINITION ========================= -->
 
-    <!-- Configurer that replaces MavenProject: org.springframework.samples:spring-framework-petclinic:5.3.13 @ C:\\Users\\vamsh\\Downloads\\Petclinic-main\\pom.xml placeholders with values from a properties file -->
+    <!-- Configurer that replaces MavenProject: org.springframework.samples:spring-framework-home:5.3.13 @ C:\\Users\\vamsh\\Downloads\\home-main\\pom.xml placeholders with values from a properties file -->
     <!-- (in this case, JDBC-related settings for the dataSource definition below) -->
     <context:property-placeholder location="classpath:spring/data-access.properties" system-properties-mode="OVERRIDE"/>
 
-    <!-- DataSource configuration for the tomcat jdbc connection pool 
-    See here for more details on commons-dbcp versus tomcat-jdbc: 
-    http://blog.ippon.fr/2013/03/13/improving-the-performance-of-the-spring-petclinic-sample-application-part-3-of-5/-->
+    <!-- DataSource configuration for the tomcat jdbc connection pool
+    See here for more details on commons-dbcp versus tomcat-jdbc:
+    http://blog.ippon.fr/2013/03/13/improving-the-performance-of-the-spring-home-sample-application-part-3-of-5/-->
     <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
-          p:driverClassName="org.h2.Driver" p:url="jdbc:h2:mem:petclinic"
+          p:driverClassName="org.h2.Driver" p:url="jdbc:h2:mem:home"
           p:username="sa" p:password=""/>
 
     <!-- Database initializer. If any of the script fails, the initialization stops. -->
@@ -38,6 +38,6 @@
 
     <beans profile="javaee">
         <!-- JNDI DataSource for JEE environments -->
-        <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/petclinic"/>
+        <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/home"/>
     </beans>
 </beans>

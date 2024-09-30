@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.util;
+package org.springframework.samples.home.util;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -34,7 +34,7 @@ import org.springframework.util.StopWatch;
  * @author Michael Isvy
  * @since 2.5
  */
-@ManagedResource("petclinic:type=CallMonitor")
+@ManagedResource("home:type=CallMonitor")
 @Aspect
 public class CallMonitoringAspect {
 

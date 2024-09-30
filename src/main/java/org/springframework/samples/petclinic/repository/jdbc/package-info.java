@@ -1,6 +1,5 @@
 /**
  * The classes in this package represent the JDBC implementation
- * of PetClinic's persistence layer.
+ * of home's persistence layer.
  */
-package org.springframework.samples.petclinic.repository.jdbc;
-
+package org.springframework.samples.home.repository.jdbc;
