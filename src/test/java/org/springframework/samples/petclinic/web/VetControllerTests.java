@@ -1,13 +1,13 @@
-package org.springframework.samples.home.web;
+package org.springframework.samples.petclinic.web;
 
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.samples.home.model.Specialty;
-import org.springframework.samples.home.model.Vet;
-import org.springframework.samples.home.service.ClinicService;
+import org.springframework.samples.petclinic.model.Specialty;
+import org.springframework.samples.petclinic.model.Vet;
+import org.springframework.samples.petclinic.service.ClinicService;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -76,3 +76,4 @@ class VetControllerTests {
     }
 
 }
+

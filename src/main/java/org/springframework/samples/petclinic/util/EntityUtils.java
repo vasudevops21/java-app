@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.springframework.samples.home.util;
+package org.springframework.samples.petclinic.util;
 
 import java.util.Collection;
 
 import org.springframework.orm.ObjectRetrievalFailureException;
-import org.springframework.samples.home.model.BaseEntity;
+import org.springframework.samples.petclinic.model.BaseEntity;
 
 /**
  * Utility methods for handling entities. Separate from the BaseEntity class mainly because of dependency on the
@@ -27,7 +27,7 @@ import org.springframework.samples.home.model.BaseEntity;
  *
  * @author Juergen Hoeller
  * @author Sam Brannen
- * @see org.springframework.samples.home.model.BaseEntity
+ * @see org.springframework.samples.petclinic.model.BaseEntity
  * @since 29.10.2003
  */
 public class EntityUtils {

@@ -4,6 +4,6 @@ EXPOSE 8080
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-ADD target/home.war /usr/local/tomcat/webapps/home.war
+ADD target/petclinic.war /usr/local/tomcat/webapps/petclinic.war
 
 CMD ["catalina.sh", "run"]

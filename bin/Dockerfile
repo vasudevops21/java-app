@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8082
-ADD target/home.war home.war
-ENTRYPOINT ["java","-jar","/home.war"]
+ADD target/petclinic.war petclinic.war
+ENTRYPOINT ["java","-jar","/petclinic.war"]

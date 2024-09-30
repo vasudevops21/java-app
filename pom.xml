@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
-    <artifactId>spring-framework-home</artifactId>
+    <artifactId>spring-framework-petclinic</artifactId>
     <version>5.3.13</version>
 
-    <name>Spring Framework home</name>
+    <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
     <description>A Spring Framework application based on JSP, Spring MVC, Spring Data JPA, Hibernate and JDBC</description>
-    <url>https://spring-home.github.io/</url>
+    <url>https://spring-petclinic.github.io/</url>
 
     <properties>
 
@@ -26,7 +26,7 @@
         <spring-framework.version>5.3.18</spring-framework.version>
 
         <!-- Web dependencies -->
-        <!-- Version update should also be done in wro.xml, home.less and static resources: htmlHeader.tag and footer.tag-->
+        <!-- Version update should also be done in wro.xml, petclinic.less and static resources: htmlHeader.tag and footer.tag-->
         <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
         <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
         <webjars-jquery.version>3.5.1</webjars-jquery.version>
@@ -177,7 +177,7 @@
 
         <!-- Database connection pool
         See here for more details on commons-dbcp versus tomcat-jdbc:
-        http://blog.ippon.fr/2013/03/13/improving-the-performance-of-the-spring-home-sample-application-part-3-of-5/
+        http://blog.ippon.fr/2013/03/13/improving-the-performance-of-the-spring-petclinic-sample-application-part-3-of-5/
     -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -419,7 +419,7 @@
                 </executions>
                 <configuration>
                     <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
-                    <cssDestinationFolder>${project.build.directory}/home/resources/css</cssDestinationFolder>
+                    <cssDestinationFolder>${project.build.directory}/petclinic/resources/css</cssDestinationFolder>
                     <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
                     <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
                     <contextFolder>${basedir}/src/main/webapp/resources/less</contextFolder>
@@ -473,7 +473,7 @@
                 <db.script>h2</db.script>
                 <jpa.database>H2</jpa.database>
                 <jdbc.driverClassName>org.h2.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:h2:mem:home</jdbc.url>
+                <jdbc.url>jdbc:h2:mem:petclinic</jdbc.url>
                 <jdbc.username>sa</jdbc.username>
                 <jdbc.password/>
             </properties>
@@ -492,7 +492,7 @@
                 <db.script>hsqldb</db.script>
                 <jpa.database>HSQL</jpa.database>
                 <jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
-                <jdbc.url>jdbc:hsqldb:mem:home</jdbc.url>
+                <jdbc.url>jdbc:hsqldb:mem:petclinic</jdbc.url>
                 <jdbc.username>sa</jdbc.username>
                 <jdbc.password/>
             </properties>
@@ -511,9 +511,9 @@
                 <db.script>mysql</db.script>
                 <jpa.database>MYSQL</jpa.database>
                 <jdbc.driverClassName>com.mysql.cj.jdbc.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:mysql://localhost:3306/home?useUnicode=true</jdbc.url>
-                <jdbc.username>home</jdbc.username>
-                <jdbc.password>home</jdbc.password>
+                <jdbc.url>jdbc:mysql://localhost:3306/petclinic?useUnicode=true</jdbc.url>
+                <jdbc.username>petclinic</jdbc.username>
+                <jdbc.password>petclinic</jdbc.password>
             </properties>
             <dependencies>
                 <dependency>
@@ -530,9 +530,9 @@
                 <db.script>postgresql</db.script>
                 <jpa.database>POSTGRESQL</jpa.database>
                 <jdbc.driverClassName>org.postgresql.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:postgresql://localhost:5432/home</jdbc.url>
+                <jdbc.url>jdbc:postgresql://localhost:5432/petclinic</jdbc.url>
                 <jdbc.username>postgres</jdbc.username>
-                <jdbc.password>home</jdbc.password>
+                <jdbc.password>petclinic</jdbc.password>
             </properties>
             <dependencies>
                 <dependency>

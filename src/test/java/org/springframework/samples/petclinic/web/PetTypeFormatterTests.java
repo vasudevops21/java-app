@@ -1,4 +1,4 @@
-package org.springframework.samples.home.web;
+package org.springframework.samples.petclinic.web;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,8 +7,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.samples.home.model.PetType;
-import org.springframework.samples.home.service.ClinicService;
+import org.springframework.samples.petclinic.model.PetType;
+import org.springframework.samples.petclinic.service.ClinicService;
 
 import java.text.ParseException;
 import java.util.ArrayList;

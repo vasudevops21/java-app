@@ -1,4 +1,5 @@
 /**
- * The classes in this package represent home's business layer.
+ * The classes in this package represent PetClinic's business layer.
  */
-package org.springframework.samples.home.model;
+package org.springframework.samples.petclinic.model;
+

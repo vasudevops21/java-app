@@ -1,9 +1,9 @@
 <%@ page session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="home" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
-<home:layout pageName="home">
+<petclinic:layout pageName="home">
     <h2><fmt:message key="welcome"/></h2>
     <div class="row">
         <div class="col-md-12">
@@ -11,4 +11,4 @@
             <img class="img-responsive" alt="A cat and a dog" src="${petsImage}"/>
         </div>
     </div>
-</home:layout>
+</petclinic:layout>

@@ -2,9 +2,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="home" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
-<home:layout pageName="vets">
+<petclinic:layout pageName="vets">
     <h2 id="veterinarians">Veterinarians</h2>
 
     <div class="row">
@@ -41,4 +41,4 @@
             <a href="<spring:url value="/vets.json" htmlEscape="true" />">View as JSON</a>
         </div>
     </div>
-</home:layout>
+</petclinic:layout>

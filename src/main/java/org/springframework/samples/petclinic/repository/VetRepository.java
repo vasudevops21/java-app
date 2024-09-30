@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.home.repository;
+package org.springframework.samples.petclinic.repository;
 
 import java.util.Collection;
 
-import org.springframework.samples.home.model.Vet;
+import org.springframework.samples.petclinic.model.Vet;
 
 /**
  * Repository class for <code>Vet</code> domain objects All method names are compliant with Spring Data naming

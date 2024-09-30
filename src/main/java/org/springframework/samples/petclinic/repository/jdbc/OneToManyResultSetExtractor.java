@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.samples.home.repository.jdbc;
+package org.springframework.samples.petclinic.repository.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

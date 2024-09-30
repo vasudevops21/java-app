@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.home.repository.jpa;
+package org.springframework.samples.petclinic.repository.jpa;
 
-import org.springframework.samples.home.model.Vet;
-import org.springframework.samples.home.repository.VetRepository;
+import org.springframework.samples.petclinic.model.Vet;
+import org.springframework.samples.petclinic.repository.VetRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

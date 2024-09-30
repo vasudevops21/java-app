@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.home.service;
+package org.springframework.samples.petclinic.service;
 
 import java.util.Collection;
 
-import org.springframework.samples.home.model.Owner;
-import org.springframework.samples.home.model.Pet;
-import org.springframework.samples.home.model.PetType;
-import org.springframework.samples.home.model.Vet;
-import org.springframework.samples.home.model.Visit;
+import org.springframework.samples.petclinic.model.Owner;
+import org.springframework.samples.petclinic.model.Pet;
+import org.springframework.samples.petclinic.model.PetType;
+import org.springframework.samples.petclinic.model.Vet;
+import org.springframework.samples.petclinic.model.Visit;
 
 
 /**
